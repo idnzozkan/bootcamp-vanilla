@@ -1,5 +1,5 @@
 import React from 'react'
-import Note from './Note'
+import Note from './NoteItem'
 
 const NoteList = ({ writtenNotes, setWrittenNotes }) => {
     return (

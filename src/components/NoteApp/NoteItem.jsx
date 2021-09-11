@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Note = ({ text, writtenNotes, setWrittenNotes }) => {
+const NoteItem = ({ text, writtenNotes, setWrittenNotes }) => {
     const handleDeleteNote = () => {
         const writtenNotesAfterDeletedItem = writtenNotes.filter(note => note !== text)
 
@@ -15,4 +15,4 @@ const Note = ({ text, writtenNotes, setWrittenNotes }) => {
     )
 }
 
-export default Note
+export default NoteItem
