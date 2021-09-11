@@ -1,11 +1,11 @@
 import React from 'react'
-import Note from './NoteItem'
+import NoteItem from './NoteItem'
 
 const NoteList = ({ writtenNotes, setWrittenNotes }) => {
     return (
         <div>
             {writtenNotes.map((note, index) => (
-                < Note text={note} writtenNotes={writtenNotes} setWrittenNotes={setWrittenNotes} key={index} />
+                <NoteItem text={note.text} writtenNotes={writtenNotes} setWrittenNotes={setWrittenNotes} key={index} id={note.id} />
             ))}
         </div>
     )

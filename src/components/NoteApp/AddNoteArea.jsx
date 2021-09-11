@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { uuid } from 'uuidv4'
 
 const AddNoteArea = ({ writtenNotes, setWrittenNotes }) => {
     const [value, setValue] = useState('')
@@ -8,7 +9,7 @@ const AddNoteArea = ({ writtenNotes, setWrittenNotes }) => {
     }
 
     const handleCreateNote = () => {
-        if (value.length) setWrittenNotes([...writtenNotes, value])
+        if (value.length) setWrittenNotes([...writtenNotes, { id: uuid(), text: value }])
         setValue('')
     }
 

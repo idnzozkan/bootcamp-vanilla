@@ -1,8 +1,8 @@
 import React from 'react'
 
-const NoteItem = ({ text, writtenNotes, setWrittenNotes }) => {
+const NoteItem = ({ id, text, writtenNotes, setWrittenNotes }) => {
     const handleDeleteNote = () => {
-        const writtenNotesAfterDeletedItem = writtenNotes.filter(note => note !== text)
+        const writtenNotesAfterDeletedItem = writtenNotes.filter(note => note.id !== id)
 
         setWrittenNotes(writtenNotesAfterDeletedItem)
     }
