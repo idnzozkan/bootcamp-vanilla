@@ -1,12 +1,16 @@
-import Table from "./components/Table";
-import data from './data'
+import Table from "./components/ExchangeTable/Table"
+import NoteApp from "./components/NoteApp/NoteApp"
 
 const App = () => {
   return (
     <div className="App">
-      <Table data={data} />
+      <Table />
+
+      <hr />
+
+      <NoteApp />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
