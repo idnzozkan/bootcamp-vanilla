@@ -16,7 +16,9 @@ const AddNoteArea = ({ writtenNotes, setWrittenNotes }) => {
     return (
         <div>
             <textarea value={value} onChange={handleChange} cols="30" rows="10" />
+            <br />
             <button onClick={handleCreateNote}>Create</button>
+            <br />
         </div>
     )
 }
