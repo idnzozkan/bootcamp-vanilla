@@ -8,7 +8,7 @@ const AddNoteArea = ({ writtenNotes, setWrittenNotes }) => {
     }
 
     const handleCreateNote = () => {
-        setWrittenNotes([...writtenNotes, value])
+        if (value.length) setWrittenNotes([...writtenNotes, value])
         setValue('')
     }
 
