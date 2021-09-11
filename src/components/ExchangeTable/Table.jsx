@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import TableHead from './TableHead'
 import TableRecords from './TableRecords'
+import data from '../../data'
 
-const Table = ({ data }) => {
+const Table = () => {
     return (
         <table border='1'>
             <TableHead />

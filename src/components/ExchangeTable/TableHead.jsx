@@ -1,6 +1,6 @@
 import React from 'react'
 
-const TableHead = ({ data }) => {
+const TableHead = () => {
     return (
         <tr>
             <th>Döviz Cinsi</th>
