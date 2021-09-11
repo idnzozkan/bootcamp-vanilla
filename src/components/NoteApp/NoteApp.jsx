@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import AddNoteArea from './AddNoteArea'
 import NoteList from './NoteList'
 
