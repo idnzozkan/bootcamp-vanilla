@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 import TableHead from './TableHead'
 import TableRecords from './TableRecords'
-import data from '../../data'
+import data from '../../data/exchange-data'
 
 const Table = () => {
     return (
