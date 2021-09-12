@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { uuid } from 'uuidv4'
+import './styles/AddNoteArea.css'
 
 const AddNoteArea = ({ writtenNotes, setWrittenNotes }) => {
     const [value, setValue] = useState('')
@@ -14,11 +15,9 @@ const AddNoteArea = ({ writtenNotes, setWrittenNotes }) => {
     }
 
     return (
-        <div>
-            <textarea value={value} onChange={handleChange} cols="30" rows="10" />
-            <br />
-            <button onClick={handleCreateNote}>Create</button>
-            <br />
+        <div id="form-container">
+            <textarea id="entry-input" placeholder="Type something" value={value} onChange={handleChange} />
+            <button class="create-btn" onClick={handleCreateNote}>Create</button>
         </div>
     )
 }
