@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { NotesContext } from '../../contexts/NotesContext'
 import { Link } from 'react-router-dom'
 import './styles/NoteItem.css'
 
-const NoteItem = ({ id, text, writtenNotes, setWrittenNotes }) => {
+const NoteItem = ({ id, text }) => {
+    const [writtenNotes, setWrittenNotes] = useContext(NotesContext)
+
     const handleDeleteNote = () => {
         const writtenNotesAfterDeletedItem = writtenNotes.filter(note => note.id !== id)
 

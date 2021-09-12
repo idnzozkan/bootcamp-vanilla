@@ -1,8 +1,11 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
+import { NotesContext } from '../../contexts/NotesContext'
 import { uuid } from 'uuidv4'
 import './styles/AddNoteArea.css'
 
-const AddNoteArea = ({ writtenNotes, setWrittenNotes }) => {
+const AddNoteArea = () => {
+    const [writtenNotes, setWrittenNotes] = useContext(NotesContext)
+
     const [value, setValue] = useState('')
 
     const handleChange = (e) => {

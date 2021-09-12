@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link, useParams } from 'react-router-dom'
+import { NotesContext } from '../../contexts/NotesContext'
 import './styles/NoteDetail.css'
 
-const NoteDetail = ({ writtenNotes }) => {
+const NoteDetail = () => {
+    const [writtenNotes] = useContext(NotesContext)
+
     const { id } = useParams()
 
     const note = writtenNotes.find(note => note.id === id)

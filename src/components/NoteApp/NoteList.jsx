@@ -1,13 +1,16 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { NotesContext } from '../../contexts/NotesContext'
 import NoteItem from './NoteItem'
 import './styles/NoteList.css'
 
-const NoteList = ({ writtenNotes, setWrittenNotes }) => {
+const NoteList = () => {
+    const [writtenNotes] = useContext(NotesContext)
+
     return (
         <div id="note-list-container">
             {writtenNotes.map((note) => (
                 <>
-                    <NoteItem text={note.text} writtenNotes={writtenNotes} setWrittenNotes={setWrittenNotes} key={note.id} id={note.id} />
+                    <NoteItem text={note.text} key={note.id} id={note.id} />
                     <br />
                 </>
             ))}
