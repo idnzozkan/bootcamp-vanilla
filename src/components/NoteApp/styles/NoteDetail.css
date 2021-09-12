@@ -1,0 +1,8 @@
+#detail-container {
+  padding: 1rem;
+}
+
+#detail-title {
+  display: flex;
+  justify-content: center;
+}

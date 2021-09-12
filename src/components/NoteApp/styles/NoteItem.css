@@ -1,0 +1,26 @@
+.note-item {
+  padding: 1rem;
+  background: #ededed;
+  width: 30%;
+}
+
+.note-item p,
+a {
+  color: black;
+}
+
+.delete-btn {
+  display: block;
+  margin-top: 1rem;
+  background: rgba(233, 150, 122, 0.342);
+  color: firebrick;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.1rem;
+}
+
+.delete-btn:hover {
+  cursor: pointer;
+}
